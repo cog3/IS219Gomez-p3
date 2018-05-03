@@ -104,11 +104,13 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
-	$scope.like  = function(index){
-            movies[index].likes++;
+	$scope.like = function(index){
+            $scope.movies[index].likes++;
+            console.log("like function works");
       }
 	$scope.dislike = function(index){
-            movies[index].dislikes++;
+            $scope.movies[index].dislikes++;
+            console.log("dislike function works")
       }
       $scope.posterClick = function(index){
             if(movies[index].posterindex < movies[index].posters.length){
