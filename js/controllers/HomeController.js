@@ -93,8 +93,6 @@ app.controller('HomeController', ['$scope', function($scope) {
   ];
 	
 	
-
-	
 	/* ADD VARIABLES FOR STEP 3 HERE */
       $scope.title = "IMDB Gomez's Top 8 Movies";
       $scope.owner = 'Christian Gomez';
