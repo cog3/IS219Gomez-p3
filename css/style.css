@@ -30,7 +30,6 @@ body {
     padding: 50px;
     border-radius: 0;
     margin-bottom: 50px;
-    display: block;
     
 }
 .thumbnail img {
@@ -133,7 +132,7 @@ body {
 /* ADD YOUR LIKE AND DISLIKE HOVER/MOUSEOVER CSS CODE HERE */
 .likes:hover{
     background-color: #9edd87;
-    color: #008700
+    color: #008700;
     transition: background 500ms;
 }
 .dislikes:hover{
