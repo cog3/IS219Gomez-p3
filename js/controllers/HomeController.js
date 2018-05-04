@@ -89,7 +89,48 @@ app.controller('HomeController', ['$scope', function($scope) {
       dislikes:	101,
       posterindex: 0
 	},
-	
+	{ 
+      title:      'Cowspiracy: The Sustainability Secret', 
+      iscore:     8.3,
+      rating:     'NR',
+      runtime:    85,
+      released:   new Date('2015', '09', '15'),
+      country:    'USA',
+      posters:    ['img/cowspiracy.jpg', 'img/cowspiracy2.jpg'],
+      imdb:       'https://www.imdb.com/title/tt3302820/?ref_=nv_sr_1',
+      website:    'https://www.cowspiracy.com',
+      likes:      1111,
+      dislikes:   0,
+      posterindex: 0
+      },
+      { 
+      title:      'The Matrix', 
+      iscore:     8.7,
+      rating:     'R',
+      runtime:    136,
+      released:   new Date('1999', '03', '31'),
+      country:    'USA',
+      posters:    ['img/matrix.jpg','img/matrix2.jpg'],
+      imdb:       'https://www.imdb.com/title/tt0133093/?ref_=nv_sr_1',
+      website:    'https://www.warnerbros.com/matrix',
+      likes:      999,
+      dislikes:   11,
+      posterindex: 0
+      },
+      { 
+      title:      'Pursuit of Happyness', 
+      iscore:     8.0,
+      rating:     'PG-13',
+      runtime:    117,
+      released:   new Date('2006', '12', '15'),
+      country:    'USA',
+      posters:    ['img/happyness.jpg','img/happyness2.jpg'],
+      imdb:       'https://www.imdb.com/title/tt0454921/?ref_=nv_sr_1',
+      website:    'http://www.sonypictures.com/movies/thepursuitofhappyness/',
+      likes:      777,
+      dislikes:   44,
+      posterindex: 0
+      },
   ];
 	
 	
