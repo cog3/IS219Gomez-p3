@@ -113,13 +113,20 @@ app.controller('HomeController', ['$scope', function($scope) {
             console.log("dislike function works")
       }
       $scope.posterClick = function(index){
-            if(movies[index].posterindex < movies[index].posters.length){
-                  movie.posterindex++;
+            if($scope.movies[index].posters.length == 0){
+                  $scope.movies[index].posterindex = 0;
+                  console.log($scope.movies[index].posterindex);
+            }
+            else if($scope.movies[index].posterindex < $scope.movies[index].posters.length-1){
+                  $scope.movies[index].posterindex++;
+                  console.log($scope.movies[index].posterindex);
             }
             else{
-                  movie.posterindex = 0;
+                  $scope.movies[index].posterindex = 0;
+                  console.log($scope.movies[index].posterindex);
             }
       }
+
       $scope.timeText = function(minutes){
             if(minutes < 60){
                   $scope.result = (minutes) + 'm';        
@@ -130,8 +137,5 @@ app.controller('HomeController', ['$scope', function($scope) {
             else{
                   $scope.result = ((minutes-minutes%60)/60 + 'h' + ' ' + minutes%60 + 'm');
             }
-      }
-	
-	
-	
+      }	
 }]);
