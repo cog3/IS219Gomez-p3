@@ -37,6 +37,8 @@ body {
     margin-bottom: 30px;
     padding: 5px;
     border: 2px dashed black;
+    height: 750px;
+    width: 500px;
 }
 
 /* This stylizes your "Poster X of Y" text */
